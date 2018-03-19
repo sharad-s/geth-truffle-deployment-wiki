@@ -4,10 +4,10 @@
 ## 2.0.) Attach a new shell to a geth console session.
 
 ### Command
-***
-
 
 _In a new terminal window:_
+
+**Open a geth console instance**
 
 `geth attach ~/Library/Ethereum/testnet/geth.ipc`
 
@@ -25,6 +25,8 @@ This command uses the specified IPC endpoint to open a geth console session in a
 ### Command
 
 _In geth console:_
+
+**Check node syncing**
 
 `web3.eth.syncing`
 
