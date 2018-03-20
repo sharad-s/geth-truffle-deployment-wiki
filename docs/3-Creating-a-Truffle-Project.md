@@ -112,6 +112,13 @@ module.exports = {
 ### Explanation
 
 We will set up truffle config to connect to our running geth client.
+
+We can specify networks such as a local development blockchain on [testrpc](http://truffleframework.com/docs/ganache/using) or a real in-use blockchain such as Ropsten (which we will be using for this tutorial.)
+
+ - The `development` network is our default configuration. It will be used if we are running a testrpc node.
+
+ - The `ropsten` network is the configuration truffle will use to deploy contracts onto the Ropsten Network. It assumes you are running a geth node at localhost:8545. The `network_id: 3` specifies that we are specifically attempting to connect to Ropsten. Finally we set the `gas` and `gasPrice` to be used with Ropsten.
+
 We need to connect to our personal geth client to be able to deploy contracts.
 
 There is a method to set this up using Infura but we can [talk about that later.](http://truffleframework.com/tutorials/using-infura-custom-provider)
